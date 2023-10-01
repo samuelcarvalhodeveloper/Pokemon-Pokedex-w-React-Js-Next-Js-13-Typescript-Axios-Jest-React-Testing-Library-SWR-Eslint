@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #170f0f;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 16rem;
+  background: #e0d3d3;
+}
+
+:focus {
+  outline: 3rem solid #007bff;
+}
+
+:active {
+  outline: none;
+}
+
+p {
+  font-size: 16rem;
+  font-weight: 500;
+}
+
+a[role="button"] {
+  cursor: pointer;
+}

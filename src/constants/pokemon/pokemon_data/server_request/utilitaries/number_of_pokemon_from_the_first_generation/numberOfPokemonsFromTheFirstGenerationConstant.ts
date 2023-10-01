@@ -1,0 +1,1 @@
+export const NUMBER_OF_POKEMONS_FROM_THE_FIRST_GENERATION: number = 151;

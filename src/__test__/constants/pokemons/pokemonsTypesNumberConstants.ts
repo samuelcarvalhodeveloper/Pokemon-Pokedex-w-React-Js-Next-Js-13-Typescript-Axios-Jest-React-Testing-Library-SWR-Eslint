@@ -1,0 +1,1 @@
+export const NUMBER_OF_TYPES_THAT_BELONG_TO_BULBASAUR: number = 2;

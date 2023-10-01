@@ -1,0 +1,7 @@
+export const BULBASAUR_ID: number = 1;
+
+export const POKEMON_ID_NUMBER_WITH_LENGTH_OF_ONE_CHARACTER: number = 1;
+
+export const POKEMON_ID_NUMBER_WITH_LENGTH_OF_TWO_CHARACTERS: number = 10;
+
+export const POKEMON_ID_NUMBER_WITH_LENGTH_OF_THREE_CHARACTERS: number = 100;

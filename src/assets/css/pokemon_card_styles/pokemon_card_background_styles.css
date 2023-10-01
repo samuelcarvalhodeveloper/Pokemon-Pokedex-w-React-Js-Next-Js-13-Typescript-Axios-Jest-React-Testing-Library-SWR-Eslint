@@ -1,0 +1,59 @@
+.article__illustration--rock {
+  background: #ebe1c1;
+}
+
+.article__illustration--water {
+  background: #c7dde4;
+}
+
+.article__illustration--electric {
+  background: #dfe093;
+}
+
+.article__illustration--grass {
+  background: #c8e7c6;
+}
+
+.article__illustration--poison {
+  background: #e4cfee;
+}
+
+.article__illustration--psychic {
+  background: #f5cce4;
+}
+
+.article__illustration--fire {
+  background: #f5d9c1;
+}
+
+.article__illustration--ice {
+  background: #dce9eb;
+}
+
+.article__illustration--fighting {
+  background: #f1cece;
+}
+
+.article__illustration--ghost {
+  background: #f1c7ea;
+}
+
+.article__illustration--dragon {
+  background: #d7c7eb;
+}
+
+.article__illustration--bug {
+  background: #d6e4b7;
+}
+
+.article__illustration--normal {
+  background: #e9e3ab;
+}
+
+.article__illustration--ground {
+  background: #e5e6ab;
+}
+
+.article__illustration--fairy {
+  background: #ebcff0;
+}

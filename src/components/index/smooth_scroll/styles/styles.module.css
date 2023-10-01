@@ -1,0 +1,12 @@
+.smooth_scroll {
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  align-items: center;
+  background: #170f0f;
+  width: 60rem;
+  height: 60rem;
+  bottom: 60rem;
+  right: 60rem;
+  position: fixed;
+}

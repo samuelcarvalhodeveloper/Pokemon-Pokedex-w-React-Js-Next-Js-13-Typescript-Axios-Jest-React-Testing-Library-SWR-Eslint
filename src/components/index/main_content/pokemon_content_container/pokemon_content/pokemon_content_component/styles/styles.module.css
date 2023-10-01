@@ -1,0 +1,32 @@
+.pokemon_container {
+  margin-top: 48rem;
+  padding: 0rem 32rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32rem;
+  place-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .pokemon_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .pokemon_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pokemon_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pokemon_container {
+    padding: 0rem;
+  }
+}

@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  height: calc(100% - 60rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30rem;
+}
+
+.center {
+  width: 100%;
+  max-width: 404rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border: 1px solid #bfabab;
+  border-radius: 16rem;
+  background: #eae1e1;
+  gap: 24px;
+  flex-flow: column nowrap;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.link {
+  color: #170f0f;
+  font-size: 14rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-align: center;
+  padding: 14rem;
+}
+
+.link:hover {
+  text-decoration: none;
+}

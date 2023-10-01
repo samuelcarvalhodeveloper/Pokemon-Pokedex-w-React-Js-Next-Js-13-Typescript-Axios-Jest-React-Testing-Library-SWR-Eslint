@@ -1,0 +1,29 @@
+.pagination {
+  margin-top: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 8rem;
+  user-select: none;
+}
+
+.break {
+  display: none;
+}
+
+.pagination * a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44rem;
+  width: 44rem;
+  border-radius: 100%;
+  border: 1rem solid #170f0f;
+  font-weight: 800;
+}
+
+.active {
+  color: #eae1e1;
+  background: #170f0f;
+}
