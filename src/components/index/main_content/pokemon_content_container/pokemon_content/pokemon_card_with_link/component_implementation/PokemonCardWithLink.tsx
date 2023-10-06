@@ -6,7 +6,7 @@ import { POKEMON_CARD_IMAGE_BACKGROUND_COLOR } from "@/constants/components/page
 import FIRST_INDEX_OF_THE_ARRAY from "@/constants/array_utilities/first_index_of_the_array/firstIndexOfTheArrayConstants";
 import { POKEMON_CARD_SPRITE_ALT_TEXT } from "@/constants/components/page_agnostic/pokemon_cards/element_alt_text/pokemonCardSpriteAltTextConstants";
 import { ARBITRARY_DIMENSIONS_TO_AVOID_NEXT_IMAGE_HEIGHT_AND_WIDTH_ERROR } from "@/constants/next/images/sizes/page_agnostic/arbitraryDimensionsToAvoidNextImageHeightAndWidthErrorConstants";
-import addHashSignAtBeginningOfIdNumber from "@/utils/formatters/pokemon_pokemon_card/add_hash_sign_at_benning_of_id_number/implementation/addHashSignAtBeginningOfIdNumber";
+import addHashSignAtBeginningOfIdNumber from "@/domains/pokemon/infrastructure/formatters/pokemon_pokemon_card/add_hash_sign_at_benning_of_id_number/implementation/addHashSignAtBeginningOfIdNumber";
 import { POKEMON_CARD_TYPES_BACKGROUND_COLOR } from "@/constants/components/page_agnostic/pokemon_cards/styles/types_background_color/pokemonCardTypesBackgroundColorConstants";
 import styles from "../styles/styles.module.css";
 

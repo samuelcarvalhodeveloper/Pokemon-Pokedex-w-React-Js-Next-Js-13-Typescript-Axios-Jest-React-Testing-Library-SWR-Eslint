@@ -1,4 +1,4 @@
-import capitalizeFirstLetterOfString from "../../../../../../../../utils/formatters/strings/capitalize_first_letter_of_string/capitalizeFirstLetterOfString";
+import capitalizeFirstLetterOfString from "../../../../../formatters/pokemon_pokemon_card/get_captalized_pokemon_name/getCapitalizedPokemonName";
 
 function getPokemonTypesArrayCasted(
   pokemonTypesArrayUnpatchedCameFromServer: Array<{ type: { name: string } }>,

@@ -1,4 +1,4 @@
-import capitalizeFirstLetterOfString from "../../../../../../utils/formatters/strings/capitalize_first_letter_of_string/capitalizeFirstLetterOfString";
+import capitalizeFirstLetterOfString from "../../../formatters/pokemon_pokemon_card/get_captalized_pokemon_name/getCapitalizedPokemonName";
 import getPokemonTypesArrayCasted from "../infrastructure/type_casters/get_pokemon_types_array_casted/getPokemonTypesArrayCasted";
 import { UnpatchedPokemonArrayOfTypes } from "../../../../../../types/pokemon/raw_pokemon_information_from_server/unpatched_pokemon_array_of_types/UnpatchedPokemonArrayOfTypes";
 import PokemonEntity from "../../implementation/PokemonEntity";

@@ -1,7 +1,7 @@
-import { EMPTY_STRING } from "../../../../constants/string_utilities/empty_string/emptyStringConstant";
-import { STRING_FIRST_INDEX } from "../../../../constants/string_utilities/string_manipulation/first_string_index/stringFirstIndexConstant";
+import { EMPTY_STRING } from "../../../../../../constants/string_utilities/empty_string/emptyStringConstant";
+import { STRING_FIRST_INDEX } from "../../../../../../constants/string_utilities/string_manipulation/first_string_index/stringFirstIndexConstant";
 
-function capitalizeFirstLetterOfString(stringToBeCapitalized: string): string {
+function getCapitalizedPokemonName(stringToBeCapitalized: string): string {
   const firstStringLetterCapitalized: string = stringToBeCapitalized
     .at(STRING_FIRST_INDEX)
     ?.toUpperCase()!;
@@ -14,4 +14,4 @@ function capitalizeFirstLetterOfString(stringToBeCapitalized: string): string {
   return firstStringLetterCapitalized + stringToBeCapitalizedWithoutFirstLetter;
 }
 
-export default capitalizeFirstLetterOfString;
+export default getCapitalizedPokemonName;
