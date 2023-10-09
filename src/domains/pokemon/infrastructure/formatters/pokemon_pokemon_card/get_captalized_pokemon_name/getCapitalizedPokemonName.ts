@@ -10,7 +10,6 @@ function getCapitalizedPokemonName(stringToBeCapitalized: string): string {
       stringToBeCapitalized.at(STRING_FIRST_INDEX)!,
       EMPTY_STRING,
     );
-
   return firstStringLetterCapitalized + stringToBeCapitalizedWithoutFirstLetter;
 }
 

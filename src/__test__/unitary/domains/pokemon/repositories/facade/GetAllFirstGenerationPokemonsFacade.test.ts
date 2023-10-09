@@ -1,6 +1,6 @@
-import { ARBITRARY_LARGER_TEST_TIMEOUT_NUMBER } from "@/__test__/constants/jest/testConfigurationsConstants";
-import GetAllFirstGenerationPokemonsFacade from "@/domains/pokemon/repositories/facade/GetAllFirstGenerationPokemonsFacade";
 import { describe, expect, test } from "@jest/globals";
+import { ARBITRARY_LARGER_TEST_TIMEOUT_NUMBER } from "../../../../../constants/jest/testConfigurationsConstants";
+import GetAllFirstGenerationPokemonsFacade from "../../../../../../domains/pokemon/repositories/facade/GetAllFirstGenerationPokemonsFacade";
 
 describe("Test Class GetAllFirstGenerationPokemonsFacade Behavior", () => {
   test(
