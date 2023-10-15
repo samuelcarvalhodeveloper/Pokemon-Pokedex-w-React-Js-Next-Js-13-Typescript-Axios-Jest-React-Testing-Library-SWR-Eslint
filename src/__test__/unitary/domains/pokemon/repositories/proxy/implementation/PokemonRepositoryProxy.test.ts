@@ -1,7 +1,7 @@
 import { describe, expect, test } from "@jest/globals";
-import { BULBASAUR_ID } from "../../../../../constants/pokemons/pokemonsIdNumberConstants";
-import { ARBITRARY_LARGER_TEST_TIMEOUT_NUMBER } from "../../../../../constants/jest/testConfigurationsConstants";
-import PokemonRepositoryProxy from "../../../../../../domains/pokemon/repositories/proxy/PokemonRepositoryProxy";
+import PokemonRepositoryProxy from "../../../../../../../domains/pokemon/repositories/proxy/implementation/PokemonRepositoryProxy";
+import { BULBASAUR_ID } from "../../../../../../constants/pokemons/pokemonsIdNumberConstants";
+import { ARBITRARY_LARGER_TEST_TIMEOUT_NUMBER } from "../../../../../../constants/jest/testConfigurationsConstants";
 
 describe("Test PokemonRepositoryProxy Behavior", () => {
   test(

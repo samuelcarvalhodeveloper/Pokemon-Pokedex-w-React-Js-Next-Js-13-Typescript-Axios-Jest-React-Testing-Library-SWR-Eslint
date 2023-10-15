@@ -1,5 +1,5 @@
 import PokemonEntity from "../../infrastructure/pokemon_entity/implementation/PokemonEntity";
-import PokemonRepositoryProxy from "../proxy/PokemonRepositoryProxy";
+import PokemonRepositoryProxy from "../proxy/implementation/PokemonRepositoryProxy";
 
 class GetAllFirstGenerationPokemonsFacade {
   private constructor() {}
