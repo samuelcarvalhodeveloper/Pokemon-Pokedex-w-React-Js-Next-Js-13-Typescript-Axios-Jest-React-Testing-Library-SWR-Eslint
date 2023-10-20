@@ -6,7 +6,7 @@ import isArrayOfPokemonDataEmpty from "../../../../../../../../../../components/
 
 describe("Test Module isArrayOfPokemonDataEmpty Behavior", () => {
   test(
-    'Test If Function: "isArrayOfPokemonDataEmpty"; Return True If Array Is Empty Correctly',
+    'Test If Function: "isArrayOfPokemonDataEmpty()"; Return True If Array Is Empty Correctly',
     async () => {
       expect(isArrayOfPokemonDataEmpty(emptyArrayOfPokemonData)).toBeTruthy();
       expect(

@@ -2,7 +2,7 @@ import FIRST_INDEX_OF_THE_ARRAY from "../../../../../constants/array_utilities/f
 import PokemonEntity from "../../../infrastructure/pokemon_entity/implementation/PokemonEntity";
 import PokemonRepository from "../../implementation/PokemonRepository";
 import PokemonsCache from "../pokemon_cache/PokemonsCache";
-import PokemonsCacheGenerator from "../pokemons_cache_generator/PokemonsCacheGenerator";
+import PokemonsCacheGenerator from "../pokemons_cache_generator/implementation/PokemonsCacheGenerator";
 
 class PokemonRepositoryProxy {
   private static instance: PokemonRepositoryProxy | null = null;
@@ -12,26 +12,25 @@ class PokemonRepositoryProxy {
   private pokemonsCacheArray: Array<PokemonEntity> =
     PokemonsCache.getInstance().getPokemonsCache();
 
-  private constructor() {}
-
-  public static async getInstance(): Promise<PokemonRepositoryProxy> {
-    if (this.instance === null) {
-      this.instance = new PokemonRepositoryProxy();
-      await PokemonsCacheGenerator.generatePokemonsCache(
-        this.instance.pokemonsCacheArray,
-        this.instance.repository,
-      );
-    }
-    return this.instance;
-  }
-
-  public getUniquePokemonDataById(pokemonId: number): PokemonEntity {
+  public async getUniquePokemonDataById(
+    pokemonId: number,
+  ): Promise<PokemonEntity> {
+    await PokemonsCacheGenerator.generatePokemonsCache(
+      this.pokemonsCacheArray,
+      this.repository,
+    );
     return this.pokemonsCacheArray.filter(
       (pokemon) => pokemon.pokemonId === pokemonId,
     )[FIRST_INDEX_OF_THE_ARRAY];
   }
 
-  public getAllFirstGenerationPokemonsData(): Array<PokemonEntity> {
+  public async getAllFirstGenerationPokemonsData(): Promise<
+    Array<PokemonEntity>
+  > {
+    await PokemonsCacheGenerator.generatePokemonsCache(
+      this.pokemonsCacheArray,
+      this.repository,
+    );
     return this.pokemonsCacheArray;
   }
 }

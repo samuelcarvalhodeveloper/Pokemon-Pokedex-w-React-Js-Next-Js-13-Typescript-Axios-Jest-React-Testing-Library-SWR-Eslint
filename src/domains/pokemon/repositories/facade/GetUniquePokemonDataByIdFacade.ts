@@ -5,9 +5,7 @@ class GetUniquePokemonDataByIdFacade {
   private constructor() {}
 
   public static async execute(pokemonId: number): Promise<PokemonEntity> {
-    return (
-      await PokemonRepositoryProxy.getInstance()
-    ).getUniquePokemonDataById(pokemonId);
+    return new PokemonRepositoryProxy().getUniquePokemonDataById(pokemonId);
   }
 }
 

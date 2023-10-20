@@ -8,9 +8,7 @@ describe("Test PokemonRepositoryProxy Behavior", () => {
     'Test If Method: "getAllFirstGenerationPokemonsData()"; Return An Array Of Pokemon Data Stored In Cache Correctly',
     async () => {
       expect(
-        (
-          await PokemonRepositoryProxy.getInstance()
-        ).getAllFirstGenerationPokemonsData(),
+        await new PokemonRepositoryProxy().getAllFirstGenerationPokemonsData(),
       ).toBeTruthy();
     },
     ARBITRARY_LARGER_TEST_TIMEOUT_NUMBER,
@@ -20,7 +18,7 @@ describe("Test PokemonRepositoryProxy Behavior", () => {
     'Test If Method: "getUniquePokemonDataById()"; Return Chose By Id Pokemon Data Stored In Cache Correctly',
     async () => {
       expect(
-        (await PokemonRepositoryProxy.getInstance()).getUniquePokemonDataById(
+        await new PokemonRepositoryProxy().getUniquePokemonDataById(
           BULBASAUR_ID,
         ),
       ).toBeTruthy();

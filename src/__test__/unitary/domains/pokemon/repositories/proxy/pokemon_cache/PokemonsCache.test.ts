@@ -3,7 +3,7 @@ import { NUMBER_OF_POKEMONS_FROM_THE_FIRST_GENERATION } from "../../../../../../
 import PokemonEntity from "../../../../../../../domains/pokemon/infrastructure/pokemon_entity/implementation/PokemonEntity";
 import PokemonRepository from "../../../../../../../domains/pokemon/repositories/implementation/PokemonRepository";
 import PokemonsCache from "../../../../../../../domains/pokemon/repositories/proxy/pokemon_cache/PokemonsCache";
-import PokemonsCacheGenerator from "../../../../../../../domains/pokemon/repositories/proxy/pokemons_cache_generator/PokemonsCacheGenerator";
+import PokemonsCacheGenerator from "../../../../../../../domains/pokemon/repositories/proxy/pokemons_cache_generator/implementation/PokemonsCacheGenerator";
 import { ARBITRARY_LARGER_TEST_TIMEOUT_NUMBER } from "../../../../../../constants/jest/testConfigurationsConstants";
 
 describe("Test Class PokemonsCache Behavior", () => {

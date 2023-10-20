@@ -5,9 +5,7 @@ class GetAllFirstGenerationPokemonsFacade {
   private constructor() {}
 
   public static async execute(): Promise<Array<PokemonEntity>> {
-    return (
-      await PokemonRepositoryProxy.getInstance()
-    ).getAllFirstGenerationPokemonsData();
+    return new PokemonRepositoryProxy().getAllFirstGenerationPokemonsData();
   }
 }
 
